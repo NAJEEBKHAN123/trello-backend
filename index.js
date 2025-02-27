@@ -10,7 +10,6 @@ const moveRoutes = require('./Routes/moveRoutes.js');
 
 dotenv.config();
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 // Database Connection
 DBconnection();
@@ -30,5 +29,5 @@ app.use('/api/lists', listRoutes);
 app.use('/api/tasks', taskRoutes);
 app.use('/api/moves', moveRoutes);
 
-// Remove listen function
+// Export Module (Vercel Ke Liye)
 module.exports = app;
