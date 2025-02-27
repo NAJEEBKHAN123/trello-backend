@@ -24,15 +24,11 @@ app.get('/', (req, res) => {
     res.send("This is the home page");
 });
 
-
-// Correct route prefixes
 app.use('/api/auth', authRoutes);
 app.use('/api/boards', boardRoutes);
 app.use('/api/lists', listRoutes);
 app.use('/api/tasks', taskRoutes);
 app.use('/api/moves', moveRoutes);
 
-// Start Server
-app.listen(PORT, () => {
-    console.log(`✅ Server is running on http://localhost:${PORT}`);
-});
+// Remove listen function
+module.exports = app;
