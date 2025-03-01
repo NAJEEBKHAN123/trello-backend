@@ -30,4 +30,6 @@ app.use('/api/tasks', taskRoutes);
 app.use('/api/moves', moveRoutes);
 
 // Export Module (Vercel Ke Liye)
-module.exports = app;
+app.listen(3000, () =>[
+    console.log('server is listening on port 3000')
+])
