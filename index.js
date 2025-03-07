@@ -29,7 +29,4 @@ app.use('/api/lists', listRoutes);
 app.use('/api/tasks', taskRoutes);
 app.use('/api/moves', moveRoutes);
 
-// Export Module (Vercel Ke Liye)
-app.listen(3000, () =>[
-    console.log('server is listening on port 3000')
-])
+module.exports = app; // 🔥 This will fix your error on Vercel
