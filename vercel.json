@@ -10,10 +10,12 @@
     {
       "src": "/api/(.*)",
       "dest": "index.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "index.js"
     }
-  ]
+  ],
+  "env": {
+    "MONGO_URI": "@MONGO_URI",
+    "JWT_SECRET": "@JWT_SECRET",
+    "SALT": "@SALT",
+    "PORT": "@PORT"
+  }
 }
