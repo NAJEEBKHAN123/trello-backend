@@ -29,5 +29,5 @@ app.use('/api/lists', listRoutes);
 app.use('/api/tasks', taskRoutes);
 app.use('/api/moves', moveRoutes);
 
-// ✅ Correct way to export for Vercel
+// ✅ Export the app for Vercel
 module.exports = app;
