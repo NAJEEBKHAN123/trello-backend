@@ -29,4 +29,5 @@ app.use('/api/lists', listRoutes);
 app.use('/api/tasks', taskRoutes);
 app.use('/api/moves', moveRoutes);
 
-module.exports = app; // 🔥 This will fix your error on Vercel
+// ✅ Correct way to export for Vercel
+module.exports = app;
